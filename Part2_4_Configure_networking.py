@@ -1,4 +1,3 @@
-# pip install azure.mgmt.storage azure.identity python-dotenv
 from azure.identity import DefaultAzureCredential
 from azure.mgmt.storage import StorageManagementClient
 from azure.mgmt.network import NetworkManagementClient
