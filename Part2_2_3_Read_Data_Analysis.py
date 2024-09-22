@@ -1,4 +1,3 @@
-# pip install azure-storage-blob pandas azure-identity python-dotenv
 from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobServiceClient
 import pandas as pd
