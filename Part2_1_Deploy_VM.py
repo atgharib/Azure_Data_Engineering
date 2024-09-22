@@ -1,4 +1,3 @@
-# pip install azure-mgmt-resource azure-mgmt-network azure-mgmt-compute azure-identity python-dotenv
 from azure.identity import DefaultAzureCredential
 from azure.mgmt.resource import ResourceManagementClient
 from azure.mgmt.network import NetworkManagementClient
@@ -23,7 +22,7 @@ vm_size = os.getenv('VM_SIZE')
 username = os.getenv('USERNAME')
 password = os.getenv('PASSWORD')
 
-# Initialize credentials and clients
+# Initializing credentials and clients
 credential = DefaultAzureCredential()
 resource_client = ResourceManagementClient(credential, subscription_id)
 network_client = NetworkManagementClient(credential, subscription_id)
@@ -141,22 +140,22 @@ def create_virtual_machine(nic):
 
 
 def main():
-    # Step 1: Create Virtual Network
+    # Step 1: Creating Virtual Network
     vnet = create_virtual_network()
 
-    # Step 2: Create Network Security Group
+    # Step 2: Creating Network Security Group
     nsg = create_network_security_group()
 
-    # Step 3: Create Subnet with NSG association
+    # Step 3: Creating Subnet with NSG association
     subnet = create_subnet(vnet, nsg)
 
-    # Step 4: Create Public IP Address
+    # Step 4: Creating Public IP Address
     public_ip_address = create_public_ip_address()
 
-    # Step 5: Create Network Interface
+    # Step 5: Creating Network Interface
     nic = create_network_interface(subnet, public_ip_address)
 
-    # Step 6: Create Virtual Machine
+    # Step 6: Creating Virtual Machine
     create_virtual_machine(nic)
 
 
