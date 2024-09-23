@@ -23,7 +23,7 @@ To run the scripts, you will need:
 - Python 3.x
 - Azure SDK for Python
 - Pandas, Matplotlib, Seaborn
-- Azure CLI (optional for direct VM operations)
+- Azure CLI 
 
 ## Instructions
 1. Clone the repository.
