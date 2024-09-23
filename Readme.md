@@ -34,8 +34,8 @@ To run the scripts, you will need:
 4. Update the `.env` file with your Azure credentials and configuration.
 5. Run the individual Python scripts as needed to perform specific tasks.
 5. To download the resulting CSV file from Azure Blob Storage to the home directory of your VM, you can run:  
-bash part2_4_SSH_DownloadToVM.sh  
+   bash part2_4_SSH_DownloadToVM.sh  
 or  
-chmod +x part2_4_SSH_DownloadToVM.sh
+   chmod +x part2_4_SSH_DownloadToVM.sh
 
 
