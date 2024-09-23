@@ -1,6 +1,6 @@
 # Azure Data Engineering Assignment
 
-This repository contains the solutions and code implementation for an Azure Data Engineering assignment. The project demonstrates key concepts of working with Azure services, including Azure Storage, Azure Data Factory, and Virtual Machines.
+This repository contains the solutions and code implementation for an Azure Data Engineering assignment. The project demonstrates key concepts of working with Azure services, including Azure Storage, and Virtual Machines.
 
 ## Author
 Atieh Gharib
