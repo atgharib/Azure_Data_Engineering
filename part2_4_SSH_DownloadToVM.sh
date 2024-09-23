@@ -14,10 +14,10 @@ az --version
 az storage account show -n dataengineerv1 --query networkRuleSet
 
 # Step 4: Getting the network interface ID for the VM
-NIC_ID=\$(az vm show --resource-group Data_Engineer --name VM-AtiehGharib --query networkProfile.networkInterfaces[0].id -o tsv)
+NIC_ID=$(az vm show --resource-group Data_Engineer --name VM-AtiehGharib --query networkProfile.networkInterfaces[0].id -o tsv)
 
 # Step 5: Getting the subnet ID for the network interface
-SUBNET_ID=\$(az network nic show --ids \$NIC_ID --query "ipConfigurations[0].subnet.id" -o tsv)
+SUBNET_ID=$(az network nic show --ids $NIC_ID --query "ipConfigurations[0].subnet.id" -o tsv)
 
 # Step 6: Adding network rule for the storage account 
 echo "Adding network rule for VNet..."
