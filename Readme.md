@@ -35,7 +35,9 @@ To run the scripts, you will need:
 5. Run the individual Python scripts as needed to perform specific tasks.
 5. To download the resulting CSV file from Azure Blob Storage to the home directory of your VM you can run:
       bash part2_4_SSH_DownloadToVM.sh
+   
    or make the script executable with:
+   
       chmod +x part2_4_SSH_DownloadToVM.sh
       ./part2_4_SSH_DownloadToVM.sh
 
