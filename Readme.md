@@ -17,6 +17,7 @@ The project includes Python scripts that leverage Azure SDKs and services to:
 - **Python Scripts**: The repository contains Python scripts for various Azure Data Engineering tasks, such as deploying infrastructure, processing data, and managing storage.
 - **Environment Configuration**: The `.env` file is used to manage sensitive configuration details securely.
 - **Data Analysis**: Scripts for processing data, generating plots, and storing results.
+- **Bash Script**: A bash script to automate downloading CSV files from Azure Blob Storage to your VM.
 
 ## Requirements
 To run the scripts, you will need:
