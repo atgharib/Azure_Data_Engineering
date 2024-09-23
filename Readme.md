@@ -22,7 +22,7 @@ The project includes Python scripts that leverage Azure SDKs and services to:
 To run the scripts, you will need:
 - Python 3.x
 - Azure SDK for Python
-- Required Libraries
+- Pandas, Matplotlib, Seaborn
 - Azure CLI 
 
 ## Instructions
