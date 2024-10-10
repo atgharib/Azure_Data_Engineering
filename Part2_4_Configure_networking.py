@@ -24,7 +24,7 @@ def get_subnet(network_client):
     # Getting the subnet properties
     subnet = network_client.subnets.get(resource_group_name, vnet_name, subnet_name)
 
-    # Checking if service_endpoints is None, and initialize it if needed
+   
     if subnet.service_endpoints is None:
         subnet.service_endpoints = []
 
@@ -32,7 +32,7 @@ def get_subnet(network_client):
     if not any(se.service == 'Microsoft.Storage' for se in subnet.service_endpoints):
         subnet.service_endpoints.append({
             'service': 'Microsoft.Storage',
-            'locations': [location]  # Adjust based on your region
+            'locations': [location] 
         })
 
         # Updating the subnet with the new service endpoint
@@ -55,11 +55,11 @@ def update_storage_network_rules(storage_client, subnet):
     storage_account = storage_client.storage_accounts.get_properties(resource_group_name, storage_account_name)
     network_rule_set = storage_account.network_rule_set
 
-    # If there are no network rules yet, initializing the network_rule_set
+   
     if not network_rule_set:
         network_rule_set = NetworkRuleSet(virtual_network_rules=[])
 
-    # Defining the virtual network rule
+   
     vnet_rule = VirtualNetworkRule(
         virtual_network_resource_id=subnet.id,
         action="Allow"
